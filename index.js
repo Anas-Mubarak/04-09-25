@@ -311,6 +311,9 @@ function wordcounter(){
         if(wpm>parseInt(HS))
         {
             HS = localStorage.setItem('highscore',wpm)
+            window.setTimeout(()=>{
+                window.location.reload()
+            },100)
         }
     }
     else
